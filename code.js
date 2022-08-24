@@ -1,9 +1,15 @@
 // helloWorld function
-function helloWorld() {
-    console.log("Hello, World!");
+const helloWorld = function(input) {
+    return ("Hello, World!");
 }
 // sayHello function
 const sayHello = function(input) {
-    return ("Hello, " + input + "!");
+    if (typeof input === "string"){
+        return ("Hello, " + input + "!");
+    } else {
+        return ("Hello, World!");
+    }
 }
+
+
 //
